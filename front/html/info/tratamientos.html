@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>TOOTH | Tratamientos</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Estilos bootstrap y propios -->
+    <link href="/css/style.css" rel="stylesheet" />
+</head>
+
+<body class="">
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-5">
+            <a class="navbar-brand" href="/"><img src="/assets/logo.png" alt="alt" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item" id="login-nav"><a class="nav-link" href="/html/ingreso/ingreso.html">INICIAR
+                            SESIÓN</a>
+                    </li>
+                    <li class="nav-item" id="register-nav"><a class="nav-link"
+                            href="/html/registro/registro.html">REGISTRARSE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/info/tratamientos.html">TRATAMIENTOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/turnos/turnos.html">TURNO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#contacto">CONTACTO</a></li>
+
+                    <!-- Acá se muestra el nombre del usuario   -->
+                    <li class="nav-item d-flex align-items-center" id="user-nav"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- CARD 1 -->
+    <div class="container">
+        <h2 class="mt-4 text-light-emphasis animate__animated  animate__zoomIn">TRATAMIENTOS</h2>
+        <h4 class="text-secondary mb-4 animate__animated  animate__zoomIn"><img src="/assets/urgencias.png"
+                class="img-tratamiento"> Excelencia Profesional
+        </h4>
+
+        <div id="tratamientos-container" class="row "></div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-white text-dark py-3 fs-7">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <!-- Columna izquierda -->
+                <div class="col-md-4 mb-3 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
+                    <p class="mb-1">Email: contacto@ejemplo.com</p>
+                    <p class="mb-1">Teléfono: +54 3644 427890</p>
+                    <p class="mb-1">Celular: +54 11 7654321</p>
+                </div>
+
+                <!-- Columna central -->
+                <div class="col-md-4 mb-3 mb-md-0 d-flex flex-column align-items-center">
+                    <p class="mb-2">
+                        <a class="link-dark text-decoration-none"
+                            href="html/errores/pagina_en_construccion.html">Preguntas frecuentes</a>
+                    </p>
+                    <p class="mb-2">Seguinos en nuestras redes:</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="text-dark mx-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-dark mx-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-dark mx-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-dark mx-2"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- Columna derecha -->
+                <div class="col-md-4 d-flex flex-column align-items-center align-items-md-end">
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="bi bi-geo-alt me-2 text-dark"></i>
+                        <p class="mb-0">
+                            <a class="link-dark text-decoration-none" href="html/errores/error.html">Ver
+                                ubicación</a>
+                        </p>
+                    </div>
+                    <p class="mb-0">Av. San Martin 123, Pdcia. R. Sáenz Peña, Chaco</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/info/info_tratamiento.js"></script>
+    <script src="/js/index.js"></script>
+
+</body>
+
+</html>

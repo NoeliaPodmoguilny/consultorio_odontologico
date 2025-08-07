@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOOTH | Historia Clínica Dental | Odontograma</title>
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Estilos bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Estilos propios -->
+    <link href="/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="historia_clinica_dental.css">
+</head>
+
+<body>
+    <div class="canvas-container">
+        <h1 class="table-info h3 animate__animated  animate__zoomIn">Odontograma</h1>
+
+        <fieldset class="animate__animated  animate__zoomIn">
+            <legend>Información General</legend>
+
+            <label for="nombre">Paciente:</label>
+            <input type="text" id="nombre" name="nombre" disabled>
+
+            <label for="dni">DNI:</label>
+            <input type="number" id="dni" name="dni" required>
+
+            <label for="fecha_odontograma">Fecha de última actualización del odontograma:</label>
+            <input type="date" id="fecha_odontograma" name="fecha_odontograma" required>
+        </fieldset>
+
+
+        <canvas id="dentalCanvas" class="animate__animated  animate__zoomIn"></canvas>
+        <div class="controls mb-3 animate__animated  animate__zoomIn">
+            <a class="text-decoration-none btn-lightblue text-black"
+                href="/html/info/odontologosPages/odontologosIndex.html">Volver</a>
+            <button class="btn-black" id="bluePen">Lapiz Azul</button>
+            <button class="btn-black" id="redPen">Lapiz Rojo</button>
+            <button class="btn-black" id="clearCanvas">Limpiar todo</button>
+            <button class="btn-black" id="saveCanvas">Guardar</button>
+            <button class="btn-black" id="newCanvas">Crear nuevo odontograma</button>
+
+        </div>
+    </div>
+    <script src="/js/info/odontologo/odontograma.js"></script>
+    <script src="/js/info/odontologo/guardarOdontograma.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</body>
+
+</html>

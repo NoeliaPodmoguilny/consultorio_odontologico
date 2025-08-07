@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>TOOTH | Inicio</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Estilos bootstrap y propios -->
+    <link href="/css/style.css" rel="stylesheet" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <navbar></navbar>
+        <div class="container px-5">
+            <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="alt" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item" id="login-nav"><a class="nav-link" href="/html/ingreso/ingreso.html">INICIAR
+                            SESIÓN</a>
+                    </li>
+                    <li class="nav-item" id="register-nav"><a class="nav-link"
+                            href="/html/registro/registro.html">REGISTRARSE</a></li>
+
+
+                    <li class="nav-item"><a class="nav-link" href="#tratamientos">TRATAMIENTOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/turnos/turnos.html">TURNO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">CONTACTO</a></li>
+
+                    <!-- Acá se muestra el nombre del usuario y el enlace al historial médico  -->
+                    <li class="nav-item d-flex align-items-center" id="user-nav"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-dark text-center position-relative">
+        <!-- Portada -->
+        <div class="img-portada position-absolute top-0 start-0 w-100 h-100">
+            <img src="assets/img_portada.jpg" class="img-fluid w-100 h-100 opacity-75"
+                alt="Imagen extraida de consultorio odonto" />
+        </div>
+        <div class="d-flex justify-content-center align-items-center h-100 position-relative" data-aos="fade-up"
+            data-aos-duration="1500" data-aos-delay="200" data-aos-easing="ease-in-out">
+            <div
+                class="content bg-light text-dark rounded-10 d-flex flex-column justify-content-center align-items-center px-5 py-4 shadow-lg">
+                <p class="fs-5 fw-bold mb-2">Solicitar un turno</p>
+                <p class="fs-6 fw-normal mb-1">
+                    Primero debes
+                    <a class="link-info text-decoration-none fs-6" href="/html/registro/registro.html">registrarte</a>
+                    <span>o</span></p> 
+                <a class="link-info text-decoration-none fs-6" href="/html/ingreso/ingreso.html">Ingresar con una cuenta existente</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tratamientos  section-->
+    <section class="border-bottom" id="tratamientos">
+        <div class="container-fluid px-0">
+            <div class="row g-0">
+                <div class="col-lg-3 p-5 mb-lg-0 d-flex flex-column align-items-center justify-content-center bg-pink">
+                    <div class="feature text-white rounded-3 mb-3">
+                        <img src="./assets/ortodoncias.png" alt="alt" class="img-fluid" />
+                    </div>
+                    <h2 class="h4 fw-bolder text-center mb-3">ORTODONCIAS</h2>
+                    <button class="btn-black">
+                        <a href="html/info/tratamientos.html" class="text-decoration-none text-dark">Ver más</a>
+                    </button>
+                </div>
+
+                <div
+                    class="col-lg-3 p-5 mb-lg-0 d-flex flex-column align-items-center justify-content-center bg-dark-lightblue">
+                    <div class="feature text-white rounded-3 mb-3">
+                        <img src="./assets/implante.png" alt="alt" class="img-fluid" />
+                    </div>
+                    <h2 class="h4 fw-bolder text-center mb-3">IMPLANTES</h2>
+                    <button class="btn-black">
+                        <a href="html/info/tratamientos.html" class="text-decoration-none text-dark">Ver más</a>
+                    </button>
+                </div>
+
+                <div
+                    class="col-lg-3 p-5 mb-lg-0 d-flex flex-column align-items-center justify-content-center bg-lightblue">
+                    <div class="feature text-white rounded-3 mb-3">
+                        <img src="./assets/protesis.png" alt="alt" class="img-fluid" />
+                    </div>
+                    <h2 class="h4 fw-bolder text-center mb-3">PRÓTESIS</h2>
+                    <button class="btn-black">
+                        <a href="html/info/tratamientos.html" class="text-decoration-none text-dark">Ver más</a>
+                    </button>
+                </div>
+
+                <div
+                    class="col-lg-3 p-5 mb-lg-0 d-flex flex-column align-items-center justify-content-center bg-dark-pink">
+                    <div class="feature text-white rounded-3 mb-3">
+                        <img src="./assets/urgencias.png" alt="alt" class="img-fluid" />
+                    </div>
+                    <h2 class="h4 fw-bolder text-center mb-3">URGENCIAS</h2>
+                    <button class="btn-black">
+                        <a href="html/info/tratamientos.html" class="text-decoration-none text-dark">Ver más</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!--Botón Tratamientos-->
+        <div class="bg-light py-5 border-bottom">
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center h-100 position-relative">
+                    <button
+                        class="btn-tratamientos content bg-white text-dark rounded-10 d-flex flex-column justify-content-center align-items-center px-6 py-4">
+                        <a href="html/info/tratamientos.html" class="text-decoration-none text-dark">VER TODOS LOS
+                            TRATAMIENTOS</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contacto section-->
+    <section class="border-bottom" id="contacto">
+        <div class="container-fluid px-0">
+            <div class="row g-0">
+                <!-- Columna izquierda -->
+                <div class="col-lg-6 p-5 d-flex justify-content-center align-items-center bg-light">
+                    <div class="p-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"
+                        data-aos-easing="ease-in-out">
+                        <h2 class="h4 fw-bolder mb-3">
+                            EN TOOTH BRINDAMOS ATENCIÓN DENTAL DE EXCELENCIA, PRIORIZANDO LA
+                            SALUD Y EL BIENESTAR DE CADA PACIENTE
+                        </h2>
+                        <p>
+                            Conocé los
+                            <a href="./html/info/profesionales.html"
+                                class="link-info text-decoration-none">profesionales</a>
+                            que trabajan en el consultorio y consultá los horarios disponibles
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Columna derecha -->
+                <div class="col-lg-6 bg-lightblue p-4">
+                    <h2 class="h4 fw-bolder mt-2 text-center">Dejanos tu consulta</h2>
+                    <!--Formulario-->
+                    <form class="p-5" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="200" data-aos-easing="ease-in-out" id="formContacto">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <input type="text" required class="form-control" id="name" placeholder="Nombre" />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" required class="form-control" id="surname" placeholder="Apellido" />
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" required class="form-control" id="email"
+                                placeholder="Correo electrónico" />
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" required id="message" rows="4"
+                                placeholder="Mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-info w-100">
+                            Enviar
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-white text-dark py-3 fs-7">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <!-- Columna izquierda -->
+                <div class="col-md-4 mb-3 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
+                    <p class="mb-1">Email: contacto@ejemplo.com</p>
+                    <p class="mb-1">Teléfono: +54 3644 427890</p>
+                    <p class="mb-1">Celular: +54 11 7654321</p>
+                </div>
+
+                <!-- Columna central -->
+                <div class="col-md-4 mb-3 mb-md-0 d-flex flex-column align-items-center">
+                    <p class="mb-2">
+                        <a class="link-dark text-decoration-none" href="/html/pages/errorPage.html">Preguntas
+                            frecuentes</a>
+                    </p>
+                    <p class="mb-2">Seguinos en nuestras redes:</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="text-dark mx-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-dark mx-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-dark mx-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-dark mx-2"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- Columna derecha -->
+                <div class="col-md-4 d-flex flex-column align-items-center align-items-md-end">
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="bi bi-geo-alt me-2 text-dark"></i>
+                        <p class="mb-0">
+                            <a class="link-dark text-decoration-none" href="/html/pages/errorPage.html">Ver
+                                ubicación</a>
+                        </p>
+                    </div>
+                    <p class="mb-0">Av. San Martin 123, Pdcia. R. Sáenz Peña, Chaco</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>

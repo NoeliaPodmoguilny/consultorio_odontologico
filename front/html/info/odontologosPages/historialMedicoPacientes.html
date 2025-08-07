@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOOTH | Historial Médico</title>
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Estilos bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Estilos propios -->
+    <link href="/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container mt-5">
+        <form id="formulario" class="form-container">
+            <p class="table-info h2 mb-4 animate__animated  animate__zoomIn">Historial Médico</p>
+
+            <!-- Input para buscar por DNI -->
+            <div class="form-group animate__animated  animate__zoomIn">
+                <legend class="h4" for="buscar_dni">PACIENTE SIN HISTORIAL MÉDICO:</legend>
+                <div class="input-group mb-3">
+                    <input type="text" id="buscar_dni" name="buscar_dni" placeholder="Ingrese el DNI del paciente"
+                        class="form-control">
+                    <span class="input-group-text"><i class="bi bi-search" id="btnBuscarDni"></i></span>
+                </div>
+            </div>
+            <div class="form-group animate__animated  animate__zoomIn">
+                <legend class="h4" for="buscar_dni">PACIENTE CON HISTORIAL MÉDICO:</legend>
+                <div class="input-group mb-3">
+                    <input type="text" id="buscar_dni2" name="buscar_dni" placeholder="Ingrese el DNI del paciente"
+                        class="form-control">
+                    <span class="input-group-text"><i class="bi bi-search" id="btnconhm"></i></span>
+                </div>
+            </div>
+            
+            
+
+            <!-- Información del Paciente -->
+            <fieldset class="animate__animated  animate__zoomIn">
+                <legend class="h4">Información del Paciente</legend>
+
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" class="form-control" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="dni">DNI:</label>
+                    <input type="number" id="dni" name="dni" class="form-control" required>
+                </div>
+
+                <div class="form-group mt-3">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="genero">Género:</label>
+                    <select id="genero" name="genero" class="form-control" required>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <!-- Información Domicilio del Paciente -->
+            <fieldset>
+                <legend class="h4">Datos de domicilio</legend>
+                <div class="form-group">
+                    <label for="calle">Calle:</label>
+                    <input type="text" id="calle" name="calle" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="altura">Altura:</label>
+                    <input type="text" id="altura" name="altura" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="provincia">Provincia:</label>
+                    <input type="text" id="provincia" name="provincia" class="form-control" required>
+                </div>
+            </fieldset>
+
+            <!-- Preguntas sobre Salud General -->
+            <fieldset>
+                <legend class="h4">Salud General</legend>
+                <div class="form-group">
+                    <label for="estado_salud">¿Cómo considera su salud en general?</label>
+                    <select id="estado_salud" name="estado_salud" class="form-control">
+                        <option value="excelente">Excelente</option>
+                        <option value="buena">Buena</option>
+                        <option value="regular">Regular</option>
+                        <option value="mala">Mala</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="peso">Peso (kg):</label>
+                    <input type="number" id="peso" name="peso" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="altura">Altura (cm):</label>
+                    <input type="number" id="altura" name="altura" class="form-control" required>
+                </div>
+            </fieldset>
+
+            <!-- Antecedentes Médicos Específicos -->
+            <fieldset>
+                <legend class="h4">Antecedentes Médicos</legend>
+                <p>Seleccione las condiciones que haya tenido o tenga actualmente:</p>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="condiciones" value="diabetes"> Diabetes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="condiciones" value="hipertension">
+                        Hipertensión
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="condiciones" value="asma"> Asma
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="condiciones" value="alergias"> Alergias
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="condiciones" value="problemas_cardiacos">
+                        Problemas Cardíacos
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="condiciones" value="cirugias"> Cirugías
+                        Previas
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="condiciones" value="hospitalizaciones">
+                        Hospitalizaciones Previas
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="medicamentos">¿Toma medicamentos actualmente? (Especifique):</label>
+                    <textarea id="medicamentos" name="medicamentos" rows="3" class="form-control"></textarea>
+                </div>
+            </fieldset>
+            <!-- Hábitos -->
+            <fieldset class="mb-3">
+                <legend class="h4">Hábitos</legend>
+
+                <p>Seleccione los hábitos que tiene actualmente:</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="habitos" value="fuma" id="fuma">
+                    <label class="form-check-label" for="fuma">Fuma</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="habitos" value="bebe_alcohol"
+                        id="bebe_alcohol">
+                    <label class="form-check-label" for="bebe_alcohol">Bebe Alcohol</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="habitos" value="ejercicio" id="ejercicio">
+                    <label class="form-check-label" for="ejercicio">Hace Ejercicio Regularmente</label>
+                </div>
+
+                <div class="mb-3">
+                    <label for="otros_habitos" class="form-label">Otros Hábitos (Especifique):</label>
+                    <textarea id="otros_habitos" name="otros_habitos" rows="3" class="form-control"></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Historial Familiar -->
+            <fieldset class="mb-3">
+                <legend class="h4">Historial Familiar</legend>
+
+                <p>Seleccione las condiciones presentes en su historial familiar:</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="historial_familiar" value="diabetes"
+                        id="diabetes">
+                    <label class="form-check-label" for="diabetes">Diabetes</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="historial_familiar" value="hipertension"
+                        id="hipertension">
+                    <label class="form-check-label" for="hipertension">Hipertensión</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="historial_familiar"
+                        value="problemas_cardiacos" id="problemas_cardiacos">
+                    <label class="form-check-label" for="problemas_cardiacos">Problemas Cardíacos</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="historial_familiar" value="cancer"
+                        id="cancer">
+                    <label class="form-check-label" for="cancer">Cáncer</label>
+                </div>
+
+                <div class="mb-3">
+                    <label for="otros_historial_familiar" class="form-label">Otros (Especifique):</label>
+                    <textarea id="otros_historial_familiar" name="otros_historial_familiar" rows="3"
+                        class="form-control"></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Embarazo -->
+            <fieldset class="mb-3">
+                <legend class="h4">Embarazo</legend>
+                <label for="embarazo" class="form-label">¿Está embarazada o cree que podría estarlo?</label>
+                <select id="embarazo" name="embarazo" class="form-select">
+                    <option value="no">No</option>
+                    <option value="si">Sí</option>
+                </select>
+            </fieldset>
+
+            <!-- Seguro médico -->
+            <fieldset class="mb-3">
+                <legend class="h4">Seguro médico</legend>
+                <label for="seguro_medico" class="form-label">¿Tiene seguro médico?</label>
+                <select id="seguro_medico" name="seguro_medico" class="form-select">
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+                <div class="mt-2">
+                    <label for="seguro_medico_descripcion" class="form-label">Nombre del seguro</label>
+                    <input type="text" id="seguro_medico_descripcion" name="seguro_medico_descripcion"
+                        placeholder="Nombre del seguro" class="form-control">
+                </div>
+            </fieldset>
+
+            <!-- Información Adicional -->
+            <fieldset class="mb-3">
+                <legend class="h4">Información Adicional</legend>
+                <label for="comentarios" class="form-label">Comentarios adicionales:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" class="form-control"></textarea>
+            </fieldset>
+
+            <!-- Contacto de Emergencia -->
+            <fieldset class="mb-3">
+                <legend class="h4">Contacto de Emergencia</legend>
+                <label for="contacto_emergencia" class="form-label">Información de contacto en caso de
+                    emergencia:</label>
+                <div class="mb-2">
+                    <input type="text" id="contacto_nombre" name="contacto_nombre" placeholder="Nombre del contacto"
+                        class="form-control">
+                </div>
+                <div class="mb-2">
+                    <input type="tel" id="contacto_telefono" name="contacto_telefono"
+                        placeholder="Teléfono del contacto" class="form-control">
+                </div>
+                <div class="mb-2">
+                    <input type="text" id="contacto_descripcion" name="contacto_descripcion"
+                        placeholder="Relación con el paciente" class="form-control">
+                </div>
+            </fieldset>
+
+            <!-- Info del diagnostico y tratameinto/s -->
+            <fieldset class="mb-3">
+                <legend class="h4">Diagnóstico y tratamiento: </legend>
+                <div class="form-group">
+                    <label for="genero">Diagnóstico:</label>
+                    <textarea id="diagnostico" name="diagnostico" rows="4" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="fecha_diagnostico">Fecha del diagnóstico:</label>
+                    <input type="date" id="fecha_diagnostico" name="fecha_diagnostico" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="tratamientos" class="h6">Selecciona 1 o varios tratamientos (ctrl+click)</label>
+                    <select id="tratamientos" class="form-select" multiple aria-label="Multiple select"></select>
+                </div>
+
+            </fieldset>
+
+            <div class="btn-group mb-3">
+                <button class="text-decoration-none btn-lightblue text-black" type="button" id="btnVolver">Volver</button>
+                <button class="btn-pink" type="submit" id="btnGuardar">Guardar</button>
+                <button class="btn-lightpink" type="button" id="btnDescargar">Descargar</button>
+                <!-- <button class="btn btn-info" type="button" id="btnOdontograma">Odontograma</button> -->
+            </div>
+
+        </form>
+    </div>
+
+    <script src="/js/info/odontologo/historial_medico.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

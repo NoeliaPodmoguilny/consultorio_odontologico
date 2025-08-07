@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOOTH | Lista de Pacientes</title>
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Estilos bootstrap y propios -->
+    <link href="/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4 animate__animated animate__zoomIn">Lista de Turnos</h2>
+        <!-- Tabla para mostrar usuarios -->
+        <table class="table table-striped table-hover">
+            <thead class="table-info animate__animated animate__zoomIn">
+                <tr>
+                    <th>#</th>
+                    <th>Paciente</th>
+                    <th>DNI</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                    <th>Odontólogo</th>
+                    <th>Fecha del tuno</th>
+                    <th>Hora del turno</th>
+                    <th>Estado del turno</th>
+                    <th>Confirmar/Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="userList" class="animate__animated animate__zoomIn">
+                <!-- Las filas de pacientes se renderizarán aquí -->
+            </tbody>
+        </table>
+        <div class="d-flex justify-content-between mt-3 mb-3 animate__animated animate__zoomIn">
+            <button id="prevPage" class="btn btn-secondary">Anterior</button>
+            <button id="nextPage" class="btn btn-secondary">Siguiente</button>
+        </div>
+
+        <div class="animate__animated animate__zoomIn">
+            <a class="text-decoration-none btn-lightblue text-black" href="/html/info/recepcionista/gestion.html">Volver</a>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Archivo JS externo -->
+    <script src="/js/info/recepcionista/listadoDeTurnos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
